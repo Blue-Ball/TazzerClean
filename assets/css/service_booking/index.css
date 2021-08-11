@@ -1,0 +1,411 @@
+body {
+
+}
+
+.top-section {
+	position: relative;
+    height: 350px;
+    background: black;
+}
+
+.top-banner {
+    background-position: center center;
+    /* opacity: 0.9; */
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    font-weight: 500;
+}
+
+.top-mask {
+	background-color: #25CBF2; 
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.top-content {
+	width: 100%;
+    position: absolute;
+    top: calc(50% - 10px);
+    text-align: center;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    line-height: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.content-section {
+    padding: 30px 10px;
+}
+
+.service-header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/*.service-title {
+    margin: 10px 0;
+}*/
+
+.service-images {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.service-image-content {
+    position: absolute;
+    top: calc(50% - 60px);
+    min-width: 380px;
+    background-color: #125cb5;
+    color: #ffffff;
+    z-index: 10;
+    padding: 10px 30px;
+    width: 60%;
+}
+
+.service-image-content .header-text {
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.service-image-content p {
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+.service-mode-box {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.service-mode-box>div {
+    padding: 0;
+}
+
+.service-mode {
+    padding: 10px;
+    border: 1px solid #d3d3d3;
+    text-align: right;
+    cursor: pointer;
+    line-height: 1.6;
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+
+.service-mode.active {
+    border-color: #6696cf;
+}
+
+.service-mode .text {
+    margin-right: 10px;
+}
+
+.mrpx-10 {
+    margin-right: 10px;
+}
+
+/*-------- Custom Checkbox ----------*/
+
+/* Hide the browser's default checkbox */
+.container input[type='checkbox'].custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ffffff;
+  margin-top: 12px;
+  margin-left: 15px;
+}
+
+/* On mouse-over, add a grey background color */
+/*.container:hover input ~ .checkmark {
+  background-color: #ffffff;
+}*/
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  /*display: none;*/
+}
+
+/* Style the checkmark/indicator */
+.checkmark:after {
+    left: 8px;
+    top: 2px;
+    width: 8px;
+    height: 15px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input ~ .checkmark {
+    border: 1px solid #cccccc;
+}
+
+input ~ .checkmark:after {
+    border-color: #cccccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+input:checked ~ .checkmark {
+    border-color: #125cb5;
+    background-color: #125cb5;
+}
+
+/* Show the checkmark when checked */
+input:checked ~ .checkmark:after {
+  display: block;
+  border-color: #ffffff;
+}
+
+/*--------- duration container -----------*/
+.duration-container {
+    position: relative;
+    height: 450px;
+    background: black;
+    padding: 35px 15px;
+}
+
+.box-banner {
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    font-weight: 500;
+}
+
+.box-mask {
+    background-color: #ffffff; 
+    opacity: 0.67;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+}
+
+.box-content {
+    width: 100%;
+    position: relative;
+    font-family: Roboto, sans-serif;
+    line-height: 2;
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.2rem;*/
+}
+
+.box-content .box-header {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.box-content p {
+    color: #6d7575;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+/*.duration-row {
+    height: 200px;
+    text-align: center;
+    line-height: 200px;
+    color: #717171;
+}*/
+
+.duration-box {
+    border: 2px solid #c6c5bd;
+    width: 30%;
+    height: 120px;
+    line-height: 120px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.duration-box.active {
+    background-color: #125cb5;
+    border-color: #125cb5;
+    color: #ffffff;
+    width: calc(40% - 20px);
+    height: 150px;
+    line-height: 150px;
+    margin-top: 25px;
+}
+
+.duration-box span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.duration-box span h2 {
+    font-size: 1.345rem;
+}
+
+.duration-box span * {
+    line-height: 1.5;
+}
+
+.duration-box span .amount {
+    font-style: italic;
+    font-size: 1.125rem;
+}
+
+.duration-box span .extra-info {
+    line-height: 2;
+    color: #125cb5;
+    font-weight: bolder;
+}
+
+.duration-box.active span .extra-info {
+    color: #ffffff;
+}
+
+/* service booking options container */ 
+.option-header {
+    margin-top: 35px;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+
+.booking-option-container .row>div, .booking-option-container .form-row>div {
+    padding: 0;
+}
+
+.promo-code-apply {
+    margin-left: 30px;
+    height: 45px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.service-address .prpx-10 {
+    padding-right: 10px !important;
+}
+
+.service-address input {
+    margin-bottom: 20px;
+}
+
+#booking-form {
+    width: 100%;
+}
+
+.order-service-detail .card-header {
+    background-color: #125cb5;
+    color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 0 0 0 0 !important;
+    font-weight: 500;
+}
+
+.order-service-detail .item-title {
+    float: left;
+}
+
+.order-service-detail .item-value {
+    float: right;
+}
+
+.order-service-detail .card-item {
+    position: relative;
+    display: flow-root;
+    line-height: 2;
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.order-service-detail .green-text {
+    color: #02740d;
+}
+
+.order-service-detail .blue-text {
+    color: #125cb5;
+}
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #dcdcdc;
+    padding-right: 0.75rem;
+    background-image: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+    padding-right: 0.75rem;
+}
+
+/* ---- reponsive --------- */
+@media (max-width: 992px) {
+    
+    .top-section {
+        height: 300px;
+    }
+
+    .container {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 768px) {
+    
+    .top-section {
+        height: 200px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .service-mode {
+        margin: 0;
+        margin-bottom: 5px;
+    }
+
+    .order-service-detail {
+        margin-top: 20px;
+    }
+
+    .order-service-detail .card-header {
+        background-color: #e3e3e3;
+        color: #161616;
+        display: none;
+    }
+}

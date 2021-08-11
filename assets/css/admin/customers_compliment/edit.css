@@ -1,0 +1,11 @@
+
+.form-control.is-valid, .was-validated .form-control:valid {
+    border-color: #dcdcdc;
+    padding-right: 0.75rem;
+    background-image: none;
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background-image: none;
+    padding-right: 0.75rem;
+}
